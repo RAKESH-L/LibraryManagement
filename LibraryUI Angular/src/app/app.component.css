@@ -1,0 +1,9 @@
+.library_box{
+    border: 1px solid;
+    font-size: large;
+    padding: 15px;
+    width: 28%;
+    float: left;
+    margin: 10px;
+    color: darkmagenta;
+}

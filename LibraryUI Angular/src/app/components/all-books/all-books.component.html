@@ -1,0 +1,34 @@
+<!-- <p>all-books works!</p>
+<div *ngFor="let l of libraryArry">
+{{l.name}}
+{{l.genre}}
+{{l.price}}
+</div> -->
+
+<div class="table_responsive" >
+    <table class="table table-bordered" >
+        <thead>
+            <tr>
+                <th>BOOK ID</th>
+                <th>NAME</th>
+                <th>AVAILABILITY</th>
+                <th>GENRE</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+    <tbody *ngFor="let l of libraryArry">
+        <tr>
+            <td>{{l.id}}</td>
+            <td>{{l.name}}</td>
+            <td>{{l.availability}}</td>
+            <td>{{l.genre}}</td>
+     <td>
+         <span class="action_btn">
+             <a  (click)="change(l.id, l.status, l.name, l.genre)">{{l.status}}</a>
+        </span>
+    </td>
+    <br />
+    </tr>
+    </tbody>
+    </table>
+</div>

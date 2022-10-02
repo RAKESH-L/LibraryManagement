@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+<br>
+<div class="form-style-5">
+    <form #bookForm="ngForm" (submit)="onFormSubmit(bookForm)">
+        <!-- (submit)="onFormSubmit(vendorForm)" -->
+    <fieldset>
+    <legend><span class="number">1</span>Vendor Page</legend>
+    <input type="text" name="name" placeholder="Book Name *" ngModel #name="ngModel">
+    <input type="text" name="genre" placeholder="Genre *" ngModel #genre="ngModel">
+    <input type="text" name="price" placeholder="Price *" ngModel #price="ngModel">
+    
+    </fieldset>
+    <input type="submit"  value="Add Flight" />
+    </form>
+</div>

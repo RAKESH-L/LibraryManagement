@@ -1,0 +1,31 @@
+
+<!-- <div *ngFor='let b of bookings'>
+    {{b.name}}
+
+</div> -->
+<br>
+
+<div class="table_responsive" >
+    <table class="table table-bordered" >
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>BOOK NAME</th>
+                <th>GENRE</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+    <tbody *ngFor='let b of bookings'>
+        <tr>
+            <td>{{b.name}}</td>
+            <td>{{b.bookName}}</td>
+            <td>{{b.genre}}</td>
+            <td>{{b.date}}</td>
+            <td>{{b.status}}</td>      
+     
+    <br />
+    </tr>
+    </tbody>
+    </table>
+</div>
